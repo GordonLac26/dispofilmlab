@@ -24,6 +24,24 @@
     </nav>
   </header>
 
+  <input class="move-popup-toggle" type="checkbox" id="move-popup-toggle" checked aria-hidden="true">
+  <aside class="move-popup" aria-labelledby="move-popup-title" aria-describedby="move-popup-copy">
+    <div class="move-popup-card" role="dialog" aria-modal="false">
+      <label class="move-popup-close" for="move-popup-toggle" aria-label="Close temporary relocation notice">×</label>
+      <p class="eyebrow"><span></span> Temporary relocation</p>
+      <h2 id="move-popup-title">We've temporarily moved to Ajax.</h2>
+      <p id="move-popup-copy">We're sorry for the inconvenience, but we have temporarily moved to our hometown in Ajax. We're still operating the same, and if you're interested in our services but live in Waterloo, we are accepting mail-ins for film orders.</p>
+      <div class="move-popup-map">
+        <iframe title="Map showing dispofilmlab temporary Ajax location at 59 Carr Drive" src="https://www.google.com/maps?q=59+Carr+Drive,+Ajax,+ON+L1T+3E4&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="move-popup-actions">
+        <a class="button primary" href="https://www.google.com/maps/dir/?api=1&destination=59+Carr+Drive%2C+Ajax%2C+ON+L1T+3E4" target="_blank" rel="noreferrer">Get directions <span>↗</span></a>
+        <a class="text-link" href="mailto:dispofilmlab@gmail.com?subject=Mail-in%20film%20order">Ask about mail-ins <span>↗</span></a>
+      </div>
+    </div>
+    <label class="move-popup-backdrop" for="move-popup-toggle" aria-label="Close temporary relocation notice"></label>
+  </aside>
+
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
